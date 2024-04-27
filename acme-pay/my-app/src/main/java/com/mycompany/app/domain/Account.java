@@ -1,12 +1,18 @@
 package com.mycompany.app.domain;
 
 import com.mycompany.app.exception.BalanceToWithdrawException;
+import lombok.*;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
+@Getter
+@Setter
+@Builder
+@AllArgsConstructor
+@NoArgsConstructor
 public class Account {
 
     private Long id;
@@ -48,7 +54,7 @@ public class Account {
 
     public void transfer(BigDecimal amount) {
         if (this.balance.compareTo(amount) >= 0) {
-            this.number
+            this.
         }
     }
 
